@@ -1,6 +1,6 @@
 <template>
   <div class="search">
-    <p>搜索关键字: 黑马程序员 </p>
+    <p>搜索关键字: {{ $.router.query.key }}</p>
     <p>搜索结果: </p>
     <ul>
       <li>.............</li>
