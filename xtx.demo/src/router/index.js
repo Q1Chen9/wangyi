@@ -8,8 +8,9 @@ Vue.use(VueRouter) // VueRouter插件初始化
 // 创建了一个路由对象
 const router = new VueRouter({
   routes: [
+    {path: "/",redirect:'/home'}
     { path: '/home', component: Home },
-    { path: '/search', component: Search }
+    { path: '/search/:words', component: Search }
   ]
 })
 
