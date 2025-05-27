@@ -18,7 +18,15 @@
 
 <script>
 export default {
-  name: 'FindMusic'
+  name: 'FindMusic',
+  data() {
+    return {
+      inpValue:''
+    }
+  },
+  methods: {
+    goSearch
+  },
 }
 </script>
 
