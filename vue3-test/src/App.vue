@@ -8,7 +8,7 @@ const counterStore = useCounterStore()
 <template>
   <div>
     <h3>
-      APP.vue根组件 - 100
+      APP.vue根组件 - {{ counterStore.count }} - {{ counterStore.double }}
     </h3>
     <Son1Com></Son1Com>
     <Son2Com></Son2Com>
