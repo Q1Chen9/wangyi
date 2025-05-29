@@ -1,18 +1,17 @@
 <script setup>
-// import { reactive } from 'vue'
-// const state = reactive({count: 100})
-
-import {ref} from 'vue'
-const state = ref(100)
-const plus1 = () =>{
-  state.value++
-}
+import Son1Com from '@/components/Son1Com.vue';
+import Son2Com from '@/components/Son2Com.vue';
+import {useCounterStore} from '@/store/counter';
+const counterStore = useCounterStore()
 </script>
 
 <template>
   <div>
-    <div>{{ state.count }}</div>
-    <button @click="plus1">+1</button>
+    <h3>
+      APP.vue根组件 - 100
+    </h3>
+    <Son1Com></Son1Com>
+    <Son2Com></Son2Com>
   </div>
 </template>
 
