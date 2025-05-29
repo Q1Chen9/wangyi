@@ -3,6 +3,8 @@ import Son1Com from '@/components/Son1Com.vue';
 import Son2Com from '@/components/Son2Com.vue';
 import {useCounterStore} from '@/store/counter';
 const counterStore = useCounterStore()
+
+
 </script>
 
 <template>
