@@ -18,4 +18,6 @@ import { computed, ref } from "vue";
         subCount,
         double
     }
+},{
+    persist: true
 })
