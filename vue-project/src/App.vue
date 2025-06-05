@@ -16,11 +16,15 @@ const userInfo = ref({
   age:18
 })
 const setUserInfo = () =>{
-  userInfo.value.age++
+  // userInfo.value.age++
+  userInfo.value.name = 'ls'
   }
 
 watch(userInfo,(newValue)  =>{
   console.log(newValue)
+},{
+  deep:true
+  immediate:true
 })
 
 
