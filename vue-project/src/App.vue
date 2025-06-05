@@ -17,15 +17,16 @@ const userInfo = ref({
 })
 const setUserInfo = () =>{
   // userInfo.value.age++
-  userInfo.value.name = 'ls'
-  }
-
-watch(userInfo,(newValue)  =>{
-  console.log(newValue)
-},{
-  deep:true
-  immediate:true
-})
+  // userInfo.value.name = 'ls'
+  userInfo.value.age++  
+}
+//3 .深度监听
+// watch(userInfo,(newValue)  =>{
+//   console.log(newValue)
+// },{
+//   deep:true
+//   immediate:true
+// })
 
 
 // watch(count,(newValue,oldValue) =>{
@@ -38,7 +39,10 @@ watch(userInfo,(newValue)  =>{
 //   immediate:true
 // }
 // )
-
+//4 监听单个属性
+watch(() => userInfo.value.age,(newValue,oldValue) =>{
+  console.log(newValue,oldValue)
+})
 
 </script>
 
